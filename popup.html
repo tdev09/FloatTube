@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FloatTube</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="header">
+    <span class="logo">▶</span>
+    <span class="title">FloatTube</span>
+  </div>
+
+  <div class="row toggle-row">
+    <label class="label" for="toggle-enabled">Auto Float</label>
+    <label class="switch" aria-label="Auto Float">
+      <input type="checkbox" id="toggle-enabled" />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="status-panel" id="status-panel">
+    <div class="status-row">
+      <span class="status-label">Status</span>
+      <span class="status-value" id="status-enabled">—</span>
+    </div>
+    <div class="status-row">
+      <span class="status-label">Video found</span>
+      <span class="status-value" id="status-video">—</span>
+    </div>
+    <div class="status-row">
+      <span class="status-label">Floating now</span>
+      <span class="status-value" id="status-pip">—</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="options">
+    <div class="row">
+      <label class="label" for="toggle-autoexit">Snap back on return</label>
+      <label class="switch" aria-label="Toggle auto-exit">
+        <input type="checkbox" id="toggle-autoexit" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="row">
+      <label class="label" for="select-delay">Float after</label>
+      <select id="select-delay">
+        <option value="0">Instant</option>
+        <option value="1000">1 second</option>
+        <option value="3000">3 seconds</option>
+        <option value="5000">5 seconds</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
