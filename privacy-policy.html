@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – FloatTube</title>
+  <meta name="description" content="Privacy Policy for FloatTube Chrome Extension. FloatTube does not collect, store, or transmit any personal data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d0f14;
+      --surface:   #13161e;
+      --border:    rgba(255,255,255,0.08);
+      --accent:    #ff4e4e;
+      --accent2:   #ff8c42;
+      --text:      #e8eaf0;
+      --muted:     #7a7f92;
+      --radius:    14px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 80px;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .logo-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* ── Card ── */
+    .card {
+      width: 100%;
+      max-width: 740px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 52px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    /* ── Hero badge ── */
+    .no-data-badge {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(135deg, rgba(255,78,78,0.12), rgba(255,140,66,0.08));
+      border: 1px solid rgba(255,78,78,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    .badge-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .badge-text strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .badge-text span {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ── Section ── */
+    section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    section p {
+      color: #b0b5c8;
+      font-size: 0.95rem;
+    }
+
+    /* ── List ── */
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #b0b5c8;
+      font-size: 0.95rem;
+    }
+    .check-list li::before {
+      content: "✓";
+      color: #4ade80;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .card { padding: 32px 24px; }
+      .header h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="https://github.com/tdev09/FloatTube" target="_blank" rel="noopener">
+      <div class="logo-icon">📺</div>
+      <span class="logo-name">FloatTube</span>
+    </a>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: June 11, 2025</p>
+  </header>
+
+  <main class="card">
+
+    <div class="no-data-badge">
+      <div class="badge-icon">🔒</div>
+      <div class="badge-text">
+        <strong>Zero Data Collection</strong>
+        <span>FloatTube does not collect, store, or transmit any personal data — ever.</span>
+      </div>
+    </div>
+
+    <section>
+      <h2>What FloatTube Does</h2>
+      <p>
+        FloatTube is a Chrome Extension that automatically enables Picture-in-Picture (PiP) mode for YouTube videos when you switch tabs, and returns the video to the player when you come back. It is a purely local, in-browser utility.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Data We Do NOT Collect</h2>
+      <ul class="check-list">
+        <li>No personal information (name, email, age, location, etc.)</li>
+        <li>No browsing history or activity logs</li>
+        <li>No YouTube watch history or video data</li>
+        <li>No crash reports or telemetry sent to any server</li>
+        <li>No cookies or tracking pixels</li>
+        <li>No data is ever transmitted to any external server or third party</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Local Storage Only</h2>
+      <p>
+        FloatTube uses Chrome's built-in <code style="background:rgba(255,255,255,0.07);padding:2px 6px;border-radius:4px;font-size:0.88rem;">chrome.storage.sync</code> API solely to remember your preferences (e.g., whether the extension is enabled, delay settings). This data is stored locally on your device and synced across your own Chrome profile via your Google account. It is never accessed by us.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Permissions Explained</h2>
+      <ul class="check-list">
+        <li><strong>storage</strong> — to save your on/off toggle and delay setting locally.</li>
+        <li><strong>tabs</strong> — to detect when you switch away from a YouTube tab so PiP can activate.</li>
+        <li><strong>host permission (youtube.com)</strong> — to inject the PiP script only on YouTube watch pages.</li>
+      </ul>
+      <p style="margin-top:12px;">None of these permissions are used to collect or share data.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>
+        FloatTube does not integrate with any third-party analytics, advertising, or tracking services. No data leaves your browser.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        FloatTube does not knowingly collect any information from anyone, including children under the age of 13. Since no data is collected at all, there is no risk to children's privacy.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        If this policy ever changes (e.g., if a future version introduces optional analytics), this page will be updated with a new date at the top, and the change will be clearly described.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Questions about this privacy policy? Open an issue on the
+        <a href="https://github.com/tdev09/FloatTube/issues" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">GitHub repository</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 FloatTube · <a href="https://github.com/tdev09/FloatTube" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
